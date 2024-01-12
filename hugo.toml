@@ -1,4 +1,4 @@
-baseURL = 'http://123.57.67.211/'
+baseURL = 'https://master--frolicking-panda-cf8a24.netlify.app/'
 languageCode = 'en-us'
 title = 'Test Hugo Site'
 theme = "maupassant"

@@ -13,7 +13,7 @@ features = ["Tag","Category","Menu","Recent Post","Archives"]
 min_version = "0.30"
 
 [author]
-  name = "飞雪无情"
+  name = "YP"
   homepage = "https://www.flysnow.org"
 
 [originauthor]

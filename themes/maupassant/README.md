@@ -2,43 +2,43 @@
 
 Maupassant theme, ported to Hugo.
 
-1. 预览效果:[飞雪无情的博客](http://www.flysnow.org)
+1. 预览效果:[YP 的博客](http://www.flysnow.org)
 2. [English Docs](README_EN.md)
 
-一款非常简洁、性能高的Hugo主题，适配不同的设备（PC，Mobile等）。 主要是基于 Typecho [Cho](https://github.com/pagecho/maupassant/), 从 [JokerQyou](https://github.com/JokerQyou/maupassant-hugo) forked，修改和添加了很多功能而成，如GA统计、最近的文章、标签云、自定义菜单、按日期归档等 .
+一款非常简洁、性能高的 Hugo 主题，适配不同的设备（PC，Mobile 等）。 主要是基于 Typecho [Cho](https://github.com/pagecho/maupassant/), 从 [JokerQyou](https://github.com/JokerQyou/maupassant-hugo) forked，修改和添加了很多功能而成，如 GA 统计、最近的文章、标签云、自定义菜单、按日期归档等 .
 
 ## Preview
 
-![Maupassant 主题预览](./preview.png "Maupassant 主题预览")
+![Maupassant 主题预览](./preview.png 'Maupassant 主题预览')
 
 ## 功能特性
 
-1. 支持Local Search 站内搜索
-2. 最近发表的文章支持，显示最近的10篇 
+1. 支持 Local Search 站内搜索
+2. 最近发表的文章支持，显示最近的 10 篇
 3. 分类支持，并且可以显示分类内的文章数量
 4. 标签云支持
 5. 文章目录支持
 6. 一键回到页面顶部
-13. 支持关键字SEO优化
-6. 自定义菜单支持，不限个数，自定义排序
-7. 自定义友情链接支持
-8. 支持文章按年份日期进行归档
-9. 支持GA分析统计
-17. 不蒜子页面计数器支持
-11. 代码高亮、代码行号、代码拷贝
-10. sitemap站点地图
-5. RSS支持，并且可以自动发现RSS
-14. Google站内搜索
-15. See Also 支持
-16. Disqus评论支持
-18. 自定义css、js
-19. utteranc和[waline](https://waline.js.org)评论
-20. 部分自定义的shortcode
-21. 文章自定义摘要
-22. 自定义广告支持
-23. 自定义备案信息
-24. 自定义图片CDN
-25. 图片点击放大
+7. 支持关键字 SEO 优化
+8. 自定义菜单支持，不限个数，自定义排序
+9. 自定义友情链接支持
+10. 支持文章按年份日期进行归档
+11. 支持 GA 分析统计
+12. 不蒜子页面计数器支持
+13. 代码高亮、代码行号、代码拷贝
+14. sitemap 站点地图
+15. RSS 支持，并且可以自动发现 RSS
+16. Google 站内搜索
+17. See Also 支持
+18. Disqus 评论支持
+19. 自定义 css、js
+20. utteranc 和[waline](https://waline.js.org)评论
+21. 部分自定义的 shortcode
+22. 文章自定义摘要
+23. 自定义广告支持
+24. 自定义备案信息
+25. 自定义图片 CDN
+26. 图片点击放大
 
 ## 下载安装
 
@@ -65,12 +65,12 @@ theme = "maupassant"
 
 #### 代码高亮
 
-从Hugo v0.60.0开始，默认使用`Goldmark`渲染MD文件，并且默认开启了代码高亮，所以该主题原来的代码高亮兼容出现问题，
-经过取舍，最终还是选用了Hugo原生的代码高亮方式，去掉了原来主题自带的基于JS的代码高亮。
+从 Hugo v0.60.0 开始，默认使用`Goldmark`渲染 MD 文件，并且默认开启了代码高亮，所以该主题原来的代码高亮兼容出现问题，经过取舍，最终还是选用了 Hugo 原生的代码高亮方式，去掉了原来主题自带的基于 JS 的代码高亮。
 
-新的Hugo内置的代码高亮使用非常代码，默认不用任何配置就可以，如果你需要开启行号、或者更换代码样式，可以参考如下配置：
+新的 Hugo 内置的代码高亮使用非常代码，默认不用任何配置就可以，如果你需要开启行号、或者更换代码样式，可以参考如下配置：
 
-*config.toml*
+_config.toml_
+
 ```toml
 [markup]
   [markup.highlight]
@@ -80,8 +80,7 @@ theme = "maupassant"
 
 更多配合和样式参考:
 
-[Configure Markup](https://gohugo.io/getting-started/configuration-markup)
-[Syntax Highlighting](https://gohugo.io/content-management/syntax-highlighting/)
+[Configure Markup](https://gohugo.io/getting-started/configuration-markup) [Syntax Highlighting](https://gohugo.io/content-management/syntax-highlighting/)
 
 #### 自定义菜单
 
@@ -109,21 +108,21 @@ theme = "maupassant"
 
 `identifier`标志符必须是唯一的，不能重复；`weight`用于排序，值越小越靠前。
 
-####  文章目录（大纲）
+#### 文章目录（大纲）
 
-该主题支持文章目录（大纲）,大纲是通过`h1~h7`标题自动生成，在MD文件里就是`##`这类标题的标记，这里建议最多使用两层文章目录，而且最好是从`h2`开始，便于SEO优化。
-如果要开启一篇文章的文章目录，只需要在`Front Matter` 添加`toc=true`即可，默认是不开启文章目录的。
+该主题支持文章目录（大纲）,大纲是通过`h1~h7`标题自动生成，在 MD 文件里就是`##`这类标题的标记，这里建议最多使用两层文章目录，而且最好是从`h2`开始，便于 SEO 优化。如果要开启一篇文章的文章目录，只需要在`Front Matter` 添加`toc=true`即可，默认是不开启文章目录的。
 
 ```toml
 toc = true
 ```
-当左侧空白空间宽度超过100px时，则显示悬浮目录。
+
+当左侧空白空间宽度超过 100px 时，则显示悬浮目录。
 
 #### Local Search 站内搜索
 
 站内搜索默认是关闭的，如果需要使用需要以下步骤开启。
 
-1. 检查`config.toml`的`disableKinds`配置项,是否禁用了RSS，如果禁用需要开启。
+1. 检查`config.toml`的`disableKinds`配置项,是否禁用了 RSS，如果禁用需要开启。
 2. 在`config.toml`中找到`[params]`配置段落，增加`localSearch = true`开启站内搜索
 3. 在`content`目录下新建`search`目录,并且在`search`目录中新建`index.md`文件，内容如下
 
@@ -136,7 +135,6 @@ type: "search"
 ```
 
 然后`hugo server`启动，打开你的站点，就可以在右上角的搜索框里输入关键字进行站内搜索了。
-
 
 #### 友情链接
 
@@ -176,21 +174,20 @@ type: "search"
 
 具体效果参考 [http://www.flysnow.org/](http://www.flysnow.org/)
 
-#### 添加GA分析统计
+#### 添加 GA 分析统计
 
-该主题已经支持了GA分析统计，只需要在`config.toml`配置里加入如下配置即可。
+该主题已经支持了 GA 分析统计，只需要在`config.toml`配置里加入如下配置即可。
+
 ```toml
 googleAnalytics = "GA ID"
 ```
 
 #### 文章归档支持
 
-Hugo默认是不支持生成归档文件的，需要自己实现。该主题已经实现了文章归档，只需要在新建`content/archives/index.md`文件，文件内容为：
+Hugo 默认是不支持生成归档文件的，需要自己实现。该主题已经实现了文章归档，只需要在新建`content/archives/index.md`文件，文件内容为：
 
 ```md
-title: "归档"
-description: Android资深工程师 ，Go和Java打杂师，《Android Gradle权威指南》作者，Android官方技术文档译者
-type: archives
+title: "归档" description: Android 资深工程师 ，Go 和 Java 打杂师，《Android Gradle 权威指南》作者，Android 官方技术文档译者 type: archives
 ```
 
 `title`和`description`都可以换成你自己的，但是`type`必须是`archives`。
@@ -210,18 +207,18 @@ type: archives
 
 #### 图片点击放大
 
-将会引入jquery.js 和 fancybox 的css和js
+将会引入 jquery.js 和 fancybox 的 css 和 js
 
 ```toml
 [params]
   fancybox = true
 ```
 
-#### 图片CDN
+#### 图片 CDN
 
-将会在mark中引入的图片src前面加上设置的host, 有http前缀的路径不会在前面加入host
-注意: 路径后面不要带/ 
-> 可直接使用jsdelivr加速 后面跟上github仓库即可 
+将会在 mark 中引入的图片 src 前面加上设置的 host, 有 http 前缀的路径不会在前面加入 host 注意: 路径后面不要带/
+
+> 可直接使用 jsdelivr 加速 后面跟上 github 仓库即可
 
 ```toml
 [params.image_cdn]
@@ -240,21 +237,21 @@ type: archives
 
 #### Disqus
 
-该主题支持Disqus评论，如果要启用Disqus，可以在`config.toml`里添加如下配置即可.
+该主题支持 Disqus 评论，如果要启用 Disqus，可以在`config.toml`里添加如下配置即可.
 
 ```toml
 disqusShortname = "yourdiscussshortname"
 ```
 
-替换成你自己的Disqus名字即可。
+替换成你自己的 Disqus 名字即可。
 
 #### 自定义文章摘要
 
-该主题采用了Hugo内置的摘要支持，大家可以通过`<!--more-->`自定义自己的摘要，也可以使用自动摘要，使用自动摘要时，可以在`config.toml`中设置摘要的长度
+该主题采用了 Hugo 内置的摘要支持，大家可以通过`<!--more-->`自定义自己的摘要，也可以使用自动摘要，使用自动摘要时，可以在`config.toml`中设置摘要的长度
 
 ```toml
 # 默认是70
-summaryLength = 140 
+summaryLength = 140
 ```
 
 #### 开启版权声明
@@ -271,8 +268,7 @@ summaryLength = 140
 
 #### utteranc
 
-该主题支持utteranc评论，这是一个基于Github  Issue的评论系统，使用方便，不用翻墙即可评论。
-可以在`config.toml`里添加如下配置即可.更多详见 [https://utteranc.es](https://utteranc.es)
+该主题支持 utteranc 评论，这是一个基于 Github Issue 的评论系统，使用方便，不用翻墙即可评论。可以在`config.toml`里添加如下配置即可.更多详见 [https://utteranc.es](https://utteranc.es)
 
 ```toml
 [params.utteranc]
@@ -281,18 +277,23 @@ summaryLength = 140
     issueTerm = "pathname"  #表示你选择以那种方式让github issue的评论和你的文章关联。
     theme = "github-light" # 样式主题，有github-light和github-dark两种
 ```
-对于以上issueTerm可以选择的配置有
+
+对于以上 issueTerm 可以选择的配置有
+
 1. `pathname` 以路径的方式，推荐选项，这样你换域名的时候就不用担心评论找不到了
-2. `url` 全链接URL路径的方式。
-3. `title` 按页面title标题的方式。
+2. `url` 全链接 URL 路径的方式。
+3. `title` 按页面 title 标题的方式。
 
 其他还有几个不常用，这里就不再赘述了。
+
 #### Waline 评论系统
-Waline一款从 Valine 衍生的带后端评论系统。快速、安全、免费部署、支持评论通知。详见[https://waline.js.org/](https://waline.js.org/)
 
-将```enable```值改为```true```即可启用
+Waline 一款从 Valine 衍生的带后端评论系统。快速、安全、免费部署、支持评论通知。详见[https://waline.js.org/](https://waline.js.org/)
 
-```serverURL```可根据官网部署教程获取
+将`enable`值改为`true`即可启用
+
+`serverURL`可根据官网部署教程获取
+
 ```toml
 [params.waline]
     enable = false
@@ -311,21 +312,18 @@ Waline一款从 Valine 衍生的带后端评论系统。快速、安全、免费
 
 #### 关于分类的名称转为小写的问题
 
-`Hugo 0.55` 版本之前, 会有分类转成小写的问题，Hugo提供了`preserveTaxonomyNames`配置，把它设置为`true`就可以了保持原来分类的名字了。
-在 `Hugo 0.55` 这个版本，[hugo 移除了 preserveTaxonomyNames 配置](https://gohugo.io/content-management/taxonomies/#example-removing-default-taxonomies)，
-模板已经默认获取 tag 和 categories 的原始字符用来展示, 大小写的问题已经优雅的解决了。
+`Hugo 0.55` 版本之前, 会有分类转成小写的问题，Hugo 提供了`preserveTaxonomyNames`配置，把它设置为`true`就可以了保持原来分类的名字了。在 `Hugo 0.55` 这个版本，[hugo 移除了 preserveTaxonomyNames 配置](https://gohugo.io/content-management/taxonomies/#example-removing-default-taxonomies)，模板已经默认获取 tag 和 categories 的原始字符用来展示, 大小写的问题已经优雅的解决了。
 
-#### 禁止URL路径小写
+#### 禁止 URL 路径小写
 
-默认情况下，URL字符串里的字母都是小写的，这对于分类名、标签名是大写的来说，博客迁移后（比如从Hexo到Hugo），原来的链接就失效了，
-为了解决这个问题，Hugo提供了`disablePathToLower`配置。
+默认情况下，URL 字符串里的字母都是小写的，这对于分类名、标签名是大写的来说，博客迁移后（比如从 Hexo 到 Hugo），原来的链接就失效了，为了解决这个问题，Hugo 提供了`disablePathToLower`配置。
 
 ```toml
 ## 是否禁止URL Path转小写
 disablePathToLower = true
 ```
 
-#### 自定义CSS&JS
+#### 自定义 CSS&JS
 
 ```
 [params]
@@ -336,77 +334,78 @@ disablePathToLower = true
   # if ['custom.js'], load '/static/js/custom.js' file
 ```
 
-#### 添加了部分自定义的shortcode
+#### 添加了部分自定义的 shortcode
 
-* Octopress blockquote (blockquote.html)
-* Wikipedia Link Generator (wp.html)
+- Octopress blockquote (blockquote.html)
+- Wikipedia Link Generator (wp.html)
 
 ```
 {{< youku id="_XMzcxODQ2NjM2NA==" autoplay="true" >}}
 ```
 
-* youku（youku.html）
+- youku（youku.html）
 
 #### 绘图支持
 
 - 序列图(使用[js-sequence](https://bramp.github.io/js-sequence-diagrams/))
+
   1. 全局使用，在`config.toml`中添加如下配置
-  
+
      ```toml
      [params.sequenceDiagrams]
          enable = true
          options = ""            # default: "{theme: 'simple'}"
      ```
-     
+
   2. 每篇文章单独设置，在`Front Matter` 添加如下内容
-  
+
      ```yaml
      sequenceDiagrams
        enable: true
      ```
-  
-   将代码块的语言标识符设置为`sequence`。例如
-  
-  ```
+
+  将代码块的语言标识符设置为`sequence`。例如
+
+  ````
   ```sequence
   Alice->Bob: Hello Bob, how are you?
   Note right of Bob: Bob thinks
   Bob-->Alice: I am good thanks!
   ​```
-  ```
-  
+  ````
+
 - 流程图（使用[flowchart.js](http://flowchart.js.org/)）
+
   1. 全局使用，在`config.toml`中添加如下配置
-  
+
      ```tom
      [params.flowchartDiagrams]
        enable = true
        options = ""
      ```
-     
+
   2. 每篇文章单独设置，在`Front Matter` 添加如下内容
-  
+
      ```yaml
      flowchartDiagrams:
        enable: true
      ```
-  
-  
-   将代码块的语言标识符设置为`flowchat`或者`flow`。例如
-  
-   ```
+
+  将代码块的语言标识符设置为`flowchat`或者`flow`。例如
+
+  ````
   ```flow
   st=>start: Start
   op=>operation: Your Operation
   cond=>condition: Yes or No?
   e=>end
-  
+
   st->op->cond
   cond(yes)->e
   cond(no)->op
   ​```
-   ```
-  
+  ````
+
 - graphviz（[viz.js](https://github.com/mdaines/viz.js))
 
   需要对每篇文章单独设置是否启用，在`Front Matter` 添加如下内容
@@ -416,12 +415,12 @@ disablePathToLower = true
     enable: true
   ```
 
-  将代码块的语言标识符设置为`viz-<engin>`， engin是选用的graphviz绘图引擎的名称，包括`circo`、`dot`、`fdp`、`neato` 、`osage`和`twopi`。例如
-  
-  ```
+  将代码块的语言标识符设置为`viz-<engin>`， engin 是选用的 graphviz 绘图引擎的名称，包括`circo`、`dot`、`fdp`、`neato` 、`osage`和`twopi`。例如
+
+  ````
   ```viz-dot
   digraph G {
-  
+
   	subgraph cluster_0 {
   		style=filled;
   		color=lightgrey;
@@ -429,7 +428,7 @@ disablePathToLower = true
   		a0 -> a1 -> a2 -> a3;
   		label = "process #1";
   	}
-  
+
   	subgraph cluster_1 {
   		node [style=filled];
   		b0 -> b1 -> b2 -> b3;
@@ -443,17 +442,18 @@ disablePathToLower = true
   	a3 -> a0;
   	a3 -> end;
   	b3 -> end;
-  
+
   	start [shape=Mdiamond];
   	end [shape=Msquare];
   }
   ​```
-  ```
+  ````
+
 #### 支持在首页上隐藏某篇文章
 
-将 front matter 中的```hiddenFromHomePage```设置为```true``` 即可
+将 front matter 中的`hiddenFromHomePage`设置为`true` 即可
 
- *默认为```false```*
+_默认为`false`_
 
 ```toml
 +++
@@ -470,17 +470,17 @@ hiddenFromHomePage = false
 
 ## 贡献
 
-欢迎大家贡献，不限于代码、Issue，功能特性，想法等等，期待看到你的PR或者ISSUE。
+欢迎大家贡献，不限于代码、Issue，功能特性，想法等等，期待看到你的 PR 或者 ISSUE。
 
 ## 其他平台上的 Maupassant 主题
 
-+ Typecho：https://github.com/pagecho/maupassant/
-+ Octopress：https://github.com/pagecho/mewpassant/
-+ Farbox：https://github.com/pagecho/Maupassant-farbox/
-+ Wordpress：https://github.com/iMuFeng/maupassant/
-+ Ghost: https://github.com/LjxPrime/maupassant/
-+ Hexo: https://github.com/tufu9441/maupassant-hexo
-+ Hugo: https://github.com/flysnow-org/maupassant-hugo
+- Typecho：https://github.com/pagecho/maupassant/
+- Octopress：https://github.com/pagecho/mewpassant/
+- Farbox：https://github.com/pagecho/Maupassant-farbox/
+- Wordpress：https://github.com/iMuFeng/maupassant/
+- Ghost: https://github.com/LjxPrime/maupassant/
+- Hexo: https://github.com/tufu9441/maupassant-hexo
+- Hugo: https://github.com/flysnow-org/maupassant-hugo
 
 ```
 

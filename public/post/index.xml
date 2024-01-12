@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Test Hugo Site</title>
+    <link>http://123.57.67.211/post/</link>
+    <description>Recent content in Posts on Test Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 12 Jan 2024 14:27:33 +0800</lastBuildDate><atom:link href="http://123.57.67.211/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>First</title>
+      <link>http://123.57.67.211/post/first/</link>
+      <pubDate>Fri, 12 Jan 2024 14:27:33 +0800</pubDate>
+      
+      <guid>http://123.57.67.211/post/first/</guid>
+      <description>hugo 微博搭建成功!!!</description>
+    </item>
+    
+    <item>
+      <title>Golang Gin 实战（五）| 接收数组和 Map</title>
+      <link>http://123.57.67.211/2019/12/18/golang-gin-query-parameters-array-map.html</link>
+      <pubDate>Wed, 18 Dec 2019 21:55:00 +0800</pubDate>
+      
+      <guid>http://123.57.67.211/2019/12/18/golang-gin-query-parameters-array-map.html</guid>
+      <description>标题 段落内容
+标题 段落内容
+标题 段落内容
+标题 段落内容
+标题 段落内容</description>
+    </item>
+    
+    <item>
+      <title>Golang Gin 实战（三）| 路由参数</title>
+      <link>http://123.57.67.211/post/2019-12-13-golang-gin-parameters-in-path/</link>
+      <pubDate>Fri, 13 Dec 2019 21:00:00 +0800</pubDate>
+      
+      <guid>http://123.57.67.211/post/2019-12-13-golang-gin-parameters-in-path/</guid>
+      <description>标题 段落内容
+标题 段落内容
+标题 段落内容
+标题 段落内容
+标题 段落内容</description>
+    </item>
+    
+    <item>
+      <title>Golang Gin 实战（三）| 路由参数</title>
+      <link>http://123.57.67.211/post/2019-12-15-golang-gin-query-parameters-source-code-analysis/</link>
+      <pubDate>Fri, 13 Dec 2019 21:00:00 +0800</pubDate>
+      
+      <guid>http://123.57.67.211/post/2019-12-15-golang-gin-query-parameters-source-code-analysis/</guid>
+      <description>标题 段落内容
+标题 段落内容
+标题 段落内容
+标题 段落内容
+标题 段落内容</description>
+    </item>
+    
+  </channel>
+</rss>
